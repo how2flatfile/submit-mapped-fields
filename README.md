@@ -28,7 +28,7 @@ I recommend you read through it
 
 - Save the project on your computer (I prefer to save on the Desktop while I test)  
 
-
+_________________________________________________
 ### Code Setup (valuable information for anyone)
 - Open the project that you just saved on your computer. Open `index.ts` file
 
@@ -45,7 +45,7 @@ I recommend you read through it
 
 - Click enter, and confirm that terminal says `Event listener deployed and running ...`
 
-
+_________________________________________________
 ### Test the workflow
 - Login to your dashboard at `platform.flatfile.com`
 
