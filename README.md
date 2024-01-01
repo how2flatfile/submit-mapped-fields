@@ -49,4 +49,4 @@ I recommend you read through it
 - Ensure that fields with `(DO NOT MAP)` in their name are NOT mapped. Make sure remaining fields are mapped
 - Click `Continue`, and then click `Submit` on the top right. 
 - When you see the `Success` message, proceed to https://webhook.site/ 
-- Notice how fields with `(DO NOT MAP)` in their names were NOT sent to https://webhook.site/ , because you left them unmapped
+- Notice how `(DO NOT MAP)` fields were NOT sent to https://webhook.site/ , since you left them unmapped
