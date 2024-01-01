@@ -15,9 +15,13 @@ I recommend you read through it.
 
 ### Basics
 [Click this link](https://github.com/how2flatfile/submit-mapped-fields) to access the repository.  
+
 Make sure that you are looking at the branch called `main`.  
+
 Click on the green button that says `<> Code`, and copy the URL.  
+
 Open your IDE (VS Code in my case, per the video above), and clone the repository using the URL you just copied.  
+
 Save the project on your computer (I prefer to save on the Desktop while I test).  
 
 ### Code Setup (valuable information for anyone)
