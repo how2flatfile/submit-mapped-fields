@@ -16,6 +16,7 @@ I recommend you read through it
 
 *The instructions below are intentionally very detailed and descriptive to help any developer, regardless of their skill level*
 
+
 ### Basics
 - [Click this link](https://github.com/how2flatfile/submit-mapped-fields) to access the repository
 
@@ -26,6 +27,7 @@ I recommend you read through it
 - Open your IDE, and clone the repository using the URL you just copied  
 
 - Save the project on your computer (I prefer to save on the Desktop while I test)  
+
 
 ### Code Setup (valuable information for anyone)
 - Open the project that you just saved on your computer. Open `index.ts` file
@@ -42,6 +44,7 @@ I recommend you read through it
   - If you also select `API Key`, copy your `Secret Key` from your Flatfile dashboard
 
 - Click enter, and confirm that terminal says `Event listener deployed and running ...`
+
 
 ### Test the workflow
 - Login to your dashboard at `platform.flatfile.com`
