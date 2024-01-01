@@ -1,3 +1,3 @@
 # Getting Started
 
-I will work on this tomorrow
+Coming soon.
