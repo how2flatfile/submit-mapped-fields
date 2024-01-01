@@ -34,7 +34,7 @@ I recommend you read through it.
 - Open the terminal, and run the command `npm install`
 
 - Run `npm outdated`. If any Flatfile-related packages are not on the latest, update them to be on the latest.
-  - If you have to update to the latest, after you do so, run `npm outdated` again to make sure update completed.
+  - If you do update to the latest, after you do so, run `npm outdated` again to ensure update completed.
 
 - Run `npx flatfile@latest deploy`. For authentication, I prefer to select `API Key`.
   - If you also select `API Key`, copy your `Secret Key` from your Flatfile dashboard.
