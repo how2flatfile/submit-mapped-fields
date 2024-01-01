@@ -1,5 +1,8 @@
 # Getting Started
 
+## First things FIRST
+If you find any issues with this README, or the repo in general, please email me at `how2flatfile@gmail.com`, or make a PR. I do what I can to keep everything in order, but I am human, after all 🙂
+
 ## For visual learners
 
 If you want to just follow the video on how to get everything done, [here is a Loom video](https://www.loom.com/share/3c84b02d2dc1417eb390990da2284341?sid=ffe81805-94ca-4e98-84f8-9529624650be) for you
