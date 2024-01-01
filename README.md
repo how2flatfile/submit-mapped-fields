@@ -20,23 +20,23 @@ I recommend you read through it.
 
 - Click on the green button that says `<> Code`, and copy the URL.  
 
-- Open your IDE (VS Code in my case, per the video above), and clone the repository using the URL you just copied.  
+- Open your IDE, and clone the repository using the URL you just copied.  
 
 - Save the project on your computer (I prefer to save on the Desktop while I test).  
 
 ### Code Setup (valuable information for anyone)
 
-Open the project that you just saved on your computer. Open `index.ts` file.
+- Open the project that you just saved on your computer. Open `index.ts` file.
 
-On line 7, replace existing link inside `webhookReceiver` with your unique URL.
-- Go to https://webhook.site/ , and copy `Your unique URL` from there.
+- On line 7, replace existing link inside `webhookReceiver` with your unique URL.
+-   Go to https://webhook.site/ , and copy `Your unique URL` from there.
 
-Open the terminal, and run the command `npm install`
+- Open the terminal, and run the command `npm install`
 
-Run `npm outdated`. If any Flatfile-related packages are not on the latest, update them to be on the latest.
-- If you have to update to the latest, after you do so, run `npm outdated` again to make sure update completed.
+- Run `npm outdated`. If any Flatfile-related packages are not on the latest, update them to be on the latest.
+-   If you have to update to the latest, after you do so, run `npm outdated` again to make sure update completed.
 
-Run `npx flatfile@latest deploy`. For authentication, I prefer to select `API Key`.
-- If you also select `API Key`, copy your `Secret Key` from your Flatfile dashboard.
+- Run `npx flatfile@latest deploy`. For authentication, I prefer to select `API Key`.
+-   If you also select `API Key`, copy your `Secret Key` from your Flatfile dashboard.
 
-Click enter, and confirm that terminal says `Event listener deployed and running ...` .
+- Click enter, and confirm that terminal says `Event listener deployed and running ...` .
