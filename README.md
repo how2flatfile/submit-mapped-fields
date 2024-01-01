@@ -14,15 +14,15 @@ I recommend you read through it.
 *The instructions below are intentionally very detailed and descriptive to help any developer, regardless of their skill level.*
 
 ### Basics
-[Click this link](https://github.com/how2flatfile/submit-mapped-fields) to access the repository.  
+- [Click this link](https://github.com/how2flatfile/submit-mapped-fields) to access the repository.  
 
-Make sure that you are looking at the branch called `main`.  
+- Make sure that you are looking at the branch called `main`.  
 
-Click on the green button that says `<> Code`, and copy the URL.  
+- Click on the green button that says `<> Code`, and copy the URL.  
 
-Open your IDE (VS Code in my case, per the video above), and clone the repository using the URL you just copied.  
+- Open your IDE (VS Code in my case, per the video above), and clone the repository using the URL you just copied.  
 
-Save the project on your computer (I prefer to save on the Desktop while I test).  
+- Save the project on your computer (I prefer to save on the Desktop while I test).  
 
 ### Code Setup (valuable information for anyone)
 
@@ -39,4 +39,4 @@ Run `npm outdated`. If any Flatfile-related packages are not on the latest, upda
 Run `npx flatfile@latest deploy`. For authentication, I prefer to select `API Key`.
 - If you also select `API Key`, copy your `Secret Key` from your Flatfile dashboard.
 
-Click enter, and confirm that terminal says `Event listener deployed and running ...`.
+Click enter, and confirm that terminal says `Event listener deployed and running ...` .
