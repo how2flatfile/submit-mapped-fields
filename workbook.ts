@@ -31,7 +31,7 @@ const contactsSheet: SheetConfig = {
             key: "country_of_birth",
             label: "Country of birth (DO NOT MAP)",
             type: "string"
-        },
+        }
     ],
 }
 
