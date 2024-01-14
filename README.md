@@ -47,20 +47,32 @@ _________________________________________________
 
 _________________________________________________
 ### Test the workflow
-- Login to your dashboard at `platform.flatfile.com`
+- Login to your dashboard at `https://platform.flatfile.com/dashboard/`
 
-- On the left panel, click `Portal`
+- On the left panel next to `PLATFORM APPS`, click `+`
 
-- Click on `Recent Sessions`, then on the top-right click on `+ Create New Session`
+- For `Name`, type `App One`. You will see that `Namespace` will auto-generate, we will edit it later
 
-- Give your Session a name, and click `Enter` on your keyboard
+- For `Type`, select either `Portal` or `Custom`. Leave the rest as is, and click `Create New App`
+
+- On the left panel, select `App One`. Then, click the Pencil icon next to `App One` to edit some info
+
+- Change `Namespace` from auto-generated `app-one` to `appOne`. Leave the rest as is and click `Update App`
+
+- On the left panel, click the Pencil icon next to `App One` and ensure `Namespace` is now set to `appOne`
+
+- Inside of `App One` app, click on `Recent Sessions`, then on the top-right click on `+ Create New Session`
+
+- Name your session `Submit mapped fields only`, and click `Enter` on your keyboard
+
+- That session should automatically open in a new tab. If it does not, click on session name to open it 
 
 - Click `Add file`, and upload `example_file.csv` that is inside your project
 
 - Ensure that fields with `(DO NOT MAP)` in their name are NOT mapped. Make sure remaining fields are mapped
 
-- Click `Continue`, and then click `Submit` on the top right
+- Click `Continue`. As records load in the table, note that fields with `(DO NOT MAP)` in their names are empty
 
-- When you see the `Success` message, proceed to https://webhook.site/ 
+- Click `Submit` on the top right. When you see the `Success!` message, proceed to https://webhook.site/ 
 
 - Notice how `(DO NOT MAP)` fields were NOT sent to https://webhook.site/ , since you left them unmapped
