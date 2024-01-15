@@ -64,11 +64,9 @@ export default function flatfileEventListener(listener: Client) {
 
       // Obtaining the mapping job's execution plan to extract "fieldMapping" out of it, which tells us which fields were mapped in the Matching step
       const jobPlan = await api.jobs.getExecutionPlan(jobId)
-      console.log("This is jobPlan: ", jobPlan)
 
       // Initializing an empty array to store the keys of the mapped fields. We need this to later only pass rows of mapped columns to webhook.site
       const mappedFields = [];
-      console.log("This is mappedFields: ", mappedFields)
 
       // Iterating through all destination fields that are mapped and extracting their field keys. Then, pushing keys of mapped fields to the "mappedFields" variable
       for (let i = 0; i < jobPlan.data.plan.fieldMapping.length; i++) {
@@ -87,7 +85,6 @@ export default function flatfileEventListener(listener: Client) {
         });
       });
 
-      console.log("This is workbookOne right after updating with mapped:true: ", workbookOne)
     });
 
     // Defining what needs to be done when a user clicks the "Submit" button (when the "workbook:submitAction" job gets triggered via "job:ready" event)
