@@ -64,9 +64,11 @@ export default function flatfileEventListener(listener: Client) {
 
       // Obtaining the mapping job's execution plan to extract "fieldMapping" out of it, which tells us which fields were mapped in the Matching step
       const jobPlan = await api.jobs.getExecutionPlan(jobId)
+      console.log("This is jobPlan: ", jobPlan)
 
       // Initializing an empty array to store the keys of the mapped fields. We need this to later only pass rows of mapped columns to webhook.site
       const mappedFields = [];
+      console.log("This is mappedFields: ", mappedFields)
 
       // Iterating through all destination fields that are mapped and extracting their field keys. Then, pushing keys of mapped fields to the "mappedFields" variable
       for (let i = 0; i < jobPlan.data.plan.fieldMapping.length; i++) {
@@ -84,6 +86,8 @@ export default function flatfileEventListener(listener: Client) {
           }
         });
       });
+
+      console.log("This is workbookOne right after updating with mapped:true: ", workbookOne)
     });
 
     // Defining what needs to be done when a user clicks the "Submit" button (when the "workbook:submitAction" job gets triggered via "job:ready" event)
@@ -154,13 +158,6 @@ export default function flatfileEventListener(listener: Client) {
         throw new Error("Failed to submit data to webhook.site");
       }
 
-      // If the axios POST call is successful, we complete the job with an appropriate message to the user
-      await api.jobs.complete(jobId, {
-        outcome: {
-          message: `Mapped fields were submitted to webhook.site. Go check it out at ${webhookReceiver}`,
-        },
-      });
-
       // Now that data is submitted to webhook.site, deleting "mapped: true" from field metadata. That way, subsequent imports don't inherit mapping information from previous imports
       workbookOne.forEach(sheet => {
         sheet.fields.forEach(field => {
@@ -170,6 +167,23 @@ export default function flatfileEventListener(listener: Client) {
           }
         });
       });
+
+      // If the axios POST call is successful, we complete the job with an appropriate message to the user
+      await api.jobs.complete(jobId, {
+        outcome: {
+          message: `Mapped fields were submitted to webhook.site`,
+        },
+      });
+
+      // Now that data is submitted to webhook.site, deleting "mapped: true" from field metadata. That way, subsequent imports don't inherit mapping information from previous imports
+      // workbookOne.forEach(sheet => {
+      //   sheet.fields.forEach(field => {
+      //     if (field.metadata && field.metadata.mapped === true) {
+      //       // Remove only the "mapped: true" property while preserving other properties
+      //       delete field.metadata.mapped;
+      //     }
+      //   });
+      // });
 
     });
   })
