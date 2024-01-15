@@ -165,22 +165,12 @@ export default function flatfileEventListener(listener: Client) {
         });
       });
 
-      // If the axios POST call is successful, we complete the job with an appropriate message to the user
+      // Completing the job with an appropriate message to the user
       await api.jobs.complete(jobId, {
         outcome: {
           message: `Mapped fields were submitted to webhook.site`,
         },
       });
-
-      // Now that data is submitted to webhook.site, deleting "mapped: true" from field metadata. That way, subsequent imports don't inherit mapping information from previous imports
-      // workbookOne.forEach(sheet => {
-      //   sheet.fields.forEach(field => {
-      //     if (field.metadata && field.metadata.mapped === true) {
-      //       // Remove only the "mapped: true" property while preserving other properties
-      //       delete field.metadata.mapped;
-      //     }
-      //   });
-      // });
 
     });
   })
