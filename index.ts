@@ -4,7 +4,7 @@ import axios from "axios";
 import { workbookOne } from "./workbook";
 
 // We use webhook.site to simulate a backend database where data will be submitted (switch the link below to your link, found on webhook.site)
-const webhookReceiver = "https://webhook.site/3628e5d4-af47-4b48-b9b5-1344f7989304"
+const webhookReceiver = "https://webhook.site/9ab30f91-9c80-4dae-8dfd-7f836cf317a2"
 
 export default function flatfileEventListener(listener: Client) {
 

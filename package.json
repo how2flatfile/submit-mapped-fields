@@ -12,9 +12,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@flatfile/api": "1.6.3",
-    "@flatfile/listener": "0.4.0",
-    "axios": "^1.6.5",
+    "@flatfile/api": "1.6.6",
+    "@flatfile/listener": "0.4.1",
+    "axios": "^1.6.7",
     "flatfile": "^3.5.13"
   },
   "devDependencies": {
